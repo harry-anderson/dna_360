@@ -1,12 +1,13 @@
 ---
 import '../styles/pico.min.css'
+import '../styles/global.css'
 import BenefitCard from '../components/benefit_card.astro'
 import HeroSection from '../components/hero_section.astro'
 ---
 
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
-		<meta charset="utf-8" data-theme="light"/>
+		<meta charset="utf-8"/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
@@ -16,7 +17,7 @@ import HeroSection from '../components/hero_section.astro'
 	<body class="container">
 		<nav>
 		  <ul>
-			<li><strong>DNA360</strong></li>
+			<li><strong>DNA 360</strong></li>
 		  </ul>
 		  <ul>
 			<li><a href="#">About</a></li>
@@ -44,12 +45,11 @@ import HeroSection from '../components/hero_section.astro'
 				</div>
 		</section>
 		</body>
-		<style>
-
-			.features {
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				/* background-color: red; */
-			}
-		</style>
 </html>
+<style is:global>
+
+	.features {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+</style>
