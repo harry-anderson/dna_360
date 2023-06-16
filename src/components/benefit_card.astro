@@ -1,0 +1,20 @@
+---
+// Access passed-in component props, like `<X title="Hello, World" />`
+const {title, desc, src} = Astro.props;
+---
+ <div class="tile">
+    <img src={src} />
+    <hgroup>
+        <h6>{title}</h6>
+        <p>{desc}</p>
+    <hgroup>
+</div>
+<style>
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+</style>
+

@@ -1,0 +1,18 @@
+---
+const {title, sub, src} = Astro.props;
+---
+<section>
+    <hgroup>
+        <h1>{title}</h1>
+        <p>{sub}</p>
+    </hgroup>
+    <img src={src}/>
+</section>
+<style>
+section {
+    margin-top: 60px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+}
+</style>

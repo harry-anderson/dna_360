@@ -1,15 +1,55 @@
 ---
+import '../styles/pico.min.css'
+import BenefitCard from '../components/benefit_card.astro'
+import HeroSection from '../components/hero_section.astro'
 ---
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="utf-8" data-theme="light"/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link rel="stylesheet" href="styles/pic">
+		<title>DNA 360</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+	<body class="container">
+		<nav>
+		  <ul>
+			<li><strong>DNA360</strong></li>
+		  </ul>
+		  <ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#" role="button">Get Started</a></li>
+		  </ul>
+		</nav>
+		<HeroSection 
+			title={"Get your health on the right path"} 
+			sub={"Find the answers you’ve been looking for, and get the support you need to feel great again."}
+			src={"icons/gut-graphic-1.png"}
+		/>
+		<section>
+			<hgroup>
+				<h4>We are DNA 360</h4>
+				<p>We take a 360° approach for a healthier and happier life.</p>
+			<hgroup>
+				<div class="features">
+					<BenefitCard title={"Better Digestion"} desc={"Prevent IBS and leaky gut symptoms."} src={"icons/icon-digestion.png"}/>
+					<BenefitCard title={"Better Digestion"} desc={"Prevent IBS and leaky gut symptoms."} src={"icons/icon-digestion.png"}/>
+					<BenefitCard title={"Better Digestion"} desc={"Prevent IBS and leaky gut symptoms."} src={"icons/icon-digestion.png"}/>
+					<BenefitCard title={"Better Digestion"} desc={"Prevent IBS and leaky gut symptoms."} src={"icons/icon-digestion.png"}/>
+					<BenefitCard title={"Better Digestion"} desc={"Prevent IBS and leaky gut symptoms."} src={"icons/icon-digestion.png"}/>
+					<BenefitCard title={"Better Digestion"} desc={"Prevent IBS and leaky gut symptoms."} src={"icons/icon-digestion.png"}/>
+				</div>
+		</section>
+		</body>
+		<style>
+
+			.features {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				/* background-color: red; */
+			}
+		</style>
 </html>
