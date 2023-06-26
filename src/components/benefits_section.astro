@@ -1,29 +1,53 @@
 ---
+import BenefitCard from './benefit_card.astro'
+
+const benefits = [
+    {
+        "title": "Better Digestion",
+        "desc": "Advanced tests and surveys to sort out body problems.",
+        "img": "icons/icon-digestion.png",
+    }, 
+    {
+        "title": "Assessments",
+        "desc": "Advanced tests and surveys to sort out body problems.",
+        "img": "icons/mag-glass-1.png",
+    }, 
+    {
+        "title": "Lifestyle",
+        "desc": "Diet has a direct impact on your mind, brain and body.",
+        "img": "icons/apple-1.png",
+    }, 
+]
+
 ---
 <section>
-    <hgroup>
+    <hgroup class="s">
         <h4>We are DNA 360</h4>
         <p>We take a 360° approach for a healthier and happier life.</p>
     <hgroup>
-        <div class="features">
-            <div class="tile">
-                <img src="" />
+    <div class="features">
+    {
+        benefits.map(({title, desc, img}) => {
+            return (
+                <BenefitCard 
+                    title={title} 
+                    desc={desc} 
+                    src={img}
+                />
+            )
+        })
+    }
+    </div>
 
-                <hgroup>
-                    <h6>Better Digestion</h6>
-                    <p>Prevent IBS and leaky gut symptoms.</p>
-                <hgroup>
-            </div>
-        </div>
-    <style>
-        section {
-            margin-top: 50px;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            /* background-color: red; */
-        }
-    </style>
 </section>
+<style>
+    section {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* background-color: red; */
+    }
+</style>
