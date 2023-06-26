@@ -1,0 +1,44 @@
+{
+  "benefits": [
+    {
+      "title": "Better Digestion",
+      "desc": "Advanced tests and surveys to sort out body problems.",
+      "icon": "icons/icon-digestion.png"
+    },
+    {
+      "title": "Assessments",
+      "desc": "Advanced tests and surveys to sort out body problems.",
+      "icon": "icons/mag-glass-1.png"
+    },
+    {
+      "title": "Lifestyle",
+      "desc": "Diet has a direct impact on your mind, brain and body.",
+      "icon": "icons/apple-1.png"
+    },
+    {
+      "title": "Sustainable Energy",
+      "desc": "Boost alertness without caffeine crashes or jitters.",
+      "icon": "icons/icon-energy-1.png"
+    },
+    {
+      "title": "Year-Round Immunity",
+      "desc": "Support the body against colds and viruses.",
+      "icon": "icons/icon-immunity.png"
+    },
+    {
+      "title": "Food",
+      "desc": "What you eat impacts every organ and cell in your body.",
+      "icon": "icons/icon-food.png"
+    },
+    {
+      "title": "Improved Metabolism",
+      "desc": "Address inflammation that causes weight gain.",
+      "icon": "icons/icon-weight-1.png"
+    },
+    {
+      "title": "Education",
+      "desc": "Taking charge of your own health is the best life investment.",
+      "icon": "icons/education-icon-23.png"
+    }
+  ]
+}

@@ -8,6 +8,9 @@ dependencies:
   astro:
     specifier: ^2.6.4
     version: 2.6.4
+  yaml:
+    specifier: ^2.3.1
+    version: 2.3.1
 
 packages:
 
@@ -3107,6 +3110,11 @@ packages:
 
   /yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+    dev: false
+
+  /yaml@2.3.1:
+    resolution: {integrity: sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==}
+    engines: {node: '>= 14'}
     dev: false
 
   /yargs-parser@21.1.1:

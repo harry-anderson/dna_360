@@ -1,23 +1,6 @@
 ---
 import BenefitCard from './benefit_card.astro'
-
-const benefits = [
-    {
-        "title": "Better Digestion",
-        "desc": "Advanced tests and surveys to sort out body problems.",
-        "img": "icons/icon-digestion.png",
-    }, 
-    {
-        "title": "Assessments",
-        "desc": "Advanced tests and surveys to sort out body problems.",
-        "img": "icons/mag-glass-1.png",
-    }, 
-    {
-        "title": "Lifestyle",
-        "desc": "Diet has a direct impact on your mind, brain and body.",
-        "img": "icons/apple-1.png",
-    }, 
-]
+import data from '../../static/index_data.json'
 
 ---
 <section>
@@ -27,12 +10,12 @@ const benefits = [
     <hgroup>
     <div class="features">
     {
-        benefits.map(({title, desc, img}) => {
+        data.benefits.map(({title, desc, icon}) => {
             return (
                 <BenefitCard 
                     title={title} 
                     desc={desc} 
-                    src={img}
+                    src={icon}
                 />
             )
         })
@@ -47,7 +30,9 @@ const benefits = [
     }
     .features {
         display: grid;
+        gap: 1rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+
         /* background-color: red; */
     }
 </style>
