@@ -2,7 +2,9 @@
 import '../styles/pico.min.css'
 import '../styles/global.css'
 import HeroSection from '../components/hero_section.astro'
-import BenefitsSection from '../components/benefits_section.astro'
+import BenefitSection from '../components/benefit_section.astro'
+import ImageSection from '../components/img_section.astro'
+import HowWeCanHelpSection from '../components/how_we_can_help.astro'
 ---
 
 <html lang="en">
@@ -30,6 +32,21 @@ import BenefitsSection from '../components/benefits_section.astro'
 			sub={"Find the answers you’ve been looking for, and get the support you need to feel great again."}
 			src={"icons/gut-graphic-1.png"}
 		/>
-		<BenefitsSection/>
+		<BenefitSection/>
+		<ImageSection 
+			title="Personalised plans" 
+			sub1={"Rebalance your body and life with food, supplements and lifestyle advice tailored to you. "} 
+			sub2={"Our aim is to work with a specialist practitioner to reduce the many common health issues that affect us as we age."}
+			src="icons/probiotic.png"
+		/>
+		<ImageSection 
+			title="Ongoing Support " 
+			sub1={"Get the emotional support and expertise you need, from our practitioner group sessions to easy-to-understand education."} 
+			src="icons/lab-tech-1.png"
+		/>
+
+		<HowWeCanHelpSection />
+
+
 		</body>
 </html>
