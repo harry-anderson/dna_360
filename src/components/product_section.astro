@@ -1,4 +1,5 @@
 ---
+const payment_link = "https://buy.stripe.com/test_00g6s18HA0DMfEQ145"
 ---
 <section>
     <div class="products">
@@ -6,19 +7,13 @@
             <h3>Saliva Kit</h3>
             <h4>$450.00</h4>
             <p>My cool product</p>
-			<a class="buy-btn" href="#" role="button">Buy Now</a>
+            <a class="buy-btn" href={payment_link} role="button">Buy Now</a>
         </div>
         <div class="product">
             <h3>Stool Kit</h3>
             <h4>$450.00</h4>
             <p>My cool product</p>
-			<a class="buy-btn" href="#" role="button">Buy Now</a>
-        </div>
-        <div class="product">
-            <h3>360 Bundle</h3>
-            <h4>$800.00</h4>
-            <p>My cool product</p>
-			<a class="buy-btn" href="#" role="button">Buy Now</a>
+            <a class="buy-btn" href={payment_link} role="button">Buy Now</a>
         </div>
     </div>
 </section>
