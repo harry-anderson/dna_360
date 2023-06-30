@@ -1,0 +1,44 @@
+---
+---
+<section>
+    <div class="products">
+        <div class="product">
+            <h3>Saliva Kit</h3>
+            <h4>$450.00</h4>
+            <p>My cool product</p>
+			<a class="buy-btn" href="#" role="button">Buy Now</a>
+        </div>
+        <div class="product">
+            <h3>Stool Kit</h3>
+            <h4>$450.00</h4>
+            <p>My cool product</p>
+			<a class="buy-btn" href="#" role="button">Buy Now</a>
+        </div>
+        <div class="product">
+            <h3>360 Bundle</h3>
+            <h4>$800.00</h4>
+            <p>My cool product</p>
+			<a class="buy-btn" href="#" role="button">Buy Now</a>
+        </div>
+    </div>
+</section>
+<style>
+    .products {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1fr;
+    }
+    .product {
+        padding: 16px;
+        border: 1px solid;
+        border-color: #eee;
+    }
+    .buy-btn {
+        width: 100%;
+    }
+    @media (min-width: 1024px) {
+        .products {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+</style>
