@@ -10,11 +10,16 @@ const {title, sub1,sub2, src} = Astro.props;
     <img src={src}/>
 </section>
 <style>
-section {
-    margin-top: 60px;
-    display: grid;
-    gap: 24px;
-    grid-template-columns: 1fr 1fr;
-}
+    section {
+        margin-top: 60px;
+        display: grid;
+        gap: 24px;
+    }
+
+    @media (min-width: 1024px) {
+        section {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 </style>
 

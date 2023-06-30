@@ -31,8 +31,12 @@ import data from '../../static/index_data.json'
     .features {
         display: grid;
         gap: 1rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
 
-        /* background-color: red; */
+    @media (min-width: 1024px) {
+        .features {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
     }
 </style>
