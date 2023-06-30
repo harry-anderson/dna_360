@@ -1,4 +1,8 @@
 ---
+import '../styles/pico.min.css'
+import '../styles/global.css'
+import Nav from '../components/nav.astro'
+
 ---
 <html lang="en" data-theme="light">
 	<head>
@@ -9,8 +13,9 @@
 		<link rel="stylesheet" href="styles/pic">
 		<title>DNA 360</title>
 	</head>
-	<body class="">
-        <slot /> <!-- your content is injected here -->
-    </body>
+	<body class="container">
+		<Nav/>
+		<slot /> <!-- your content is injected here -->
+	</body>
 </html>
 

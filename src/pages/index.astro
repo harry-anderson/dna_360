@@ -1,34 +1,14 @@
 ---
-import '../styles/pico.min.css'
-import '../styles/global.css'
 import HeroSection from '../components/hero_section.astro'
 import BenefitSection from '../components/benefit_section.astro'
 import ImageSection from '../components/img_section.astro'
 import HowWeCanHelpSection from '../components/how_we_can_help.astro'
 import VideoSection from '../components/video_section.astro'
 import ProductSection from '../components/product_section.astro'
+import MainLayout from '../layouts/main_layout.astro'
 ---
 
-<html lang="en" data-theme="light">
-	<head>
-		<meta charset="utf-8"/>
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="stylesheet" href="styles/pic">
-		<title>DNA 360</title>
-	</head>
-	<body class="container">
-		<nav>
-		  <ul>
-			<li><strong>DNA 360</strong></li>
-		  </ul>
-		  <ul>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">Shop</a></li>
-		  </ul>
-		</nav>
+<MainLayout>
 		<HeroSection 
 			title={"Get your health on the right path"} 
 			sub={"Find the answers you’ve been looking for, and get the support you need to feel great again."}
@@ -51,5 +31,4 @@ import ProductSection from '../components/product_section.astro'
 		<p>Choose from our range of testing kits</p>
 		<ProductSection />
 
-		</body>
-</html>
+	</MainLayout>
